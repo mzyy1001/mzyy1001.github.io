@@ -13,7 +13,7 @@ A minimal static site — HTML, CSS, and manuscript preview assets:
 | `index.html` | All page content (about, research interests, projects, contact). |
 | `style.css`  | Layout + typography. Mobile-friendly and supports light/dark mode via `prefers-color-scheme`. |
 | `README.md`  | This file. |
-| `assets/` | Manuscript page previews. |
+| `assets/` | Paper figures (MPI framework from the manuscript’s Figure 1). |
 
 No build step, no Jekyll, no JavaScript framework. GitHub Pages serves the
 files as-is.

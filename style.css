@@ -160,10 +160,10 @@ footer p { margin: 0; }
 ::selection { background: var(--accent); color: #fff; }
 
 /* Manuscript preview */
-.paper { display: grid; grid-template-columns: minmax(0, 1fr) 10rem; gap: 1.4rem; align-items: start; }
+.paper { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.4rem; align-items: start; }
 .paper h3 { margin-top: 1rem; }
 .paper p { color: var(--fg-muted); }
-.paper figure { margin: 1.2rem 0 0; }
+.paper figure { margin: 0; }
 .paper img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); background: white; box-shadow: 0 3px 14px #00000012; }
 .paper figure a { display: block; }
 .paper figcaption { margin-top: .45rem; font-size: .85rem; color: var(--fg-soft); }
@@ -171,5 +171,5 @@ footer p { margin: 0; }
 .project .status, .paper .status { margin: .35rem 0; font-size: .9rem; color: var(--accent); }
 @media (max-width: 600px) {
   .paper { grid-template-columns: 1fr; gap: .5rem; }
-  .paper figure { max-width: 14rem; margin-top: .5rem; }
+  .paper figure { width: 100%; margin-top: .5rem; }
 }
