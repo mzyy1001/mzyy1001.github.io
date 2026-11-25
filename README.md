@@ -6,13 +6,14 @@ Lives at: <https://mzyy1001.github.io>
 
 ## What this is
 
-A minimal static site — three files only:
+A minimal static site — HTML, CSS, and manuscript preview assets:
 
 | File | What it does |
 |---|---|
 | `index.html` | All page content (about, research interests, projects, contact). |
 | `style.css`  | Layout + typography. Mobile-friendly and supports light/dark mode via `prefers-color-scheme`. |
 | `README.md`  | This file. |
+| `assets/` | Manuscript page previews. |
 
 No build step, no Jekyll, no JavaScript framework. GitHub Pages serves the
 files as-is.

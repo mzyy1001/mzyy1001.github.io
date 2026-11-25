@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hongrui Chen — Imperial College London</title>
-  <meta name="description" content="Hongrui Chen — Year 2 Joint Mathematics and Computing student at Imperial College London. Research interests: machine learning, large language models, multi-agent reasoning.">
+  <meta name="description" content="Hongrui Chen — MEng Mathematics and Computer Science student at Imperial College London. Research interests: agent evaluation, large language models, and multi-agent systems.">
   <meta name="author" content="Hongrui Chen">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +14,7 @@
     <header class="intro">
       <h1>Hongrui Chen</h1>
       <p class="title">
-        Year&nbsp;2 Joint Mathematics and Computing student<br>
+        MEng Mathematics and Computer Science student<br>
         Imperial College London
       </p>
       <p class="contact">
@@ -27,13 +27,16 @@
     <section>
       <h2>About</h2>
       <p>
-        I am a Year&nbsp;2 Joint Mathematics and Computing student at
-        Imperial College London. My interests include machine learning,
-        multi-agent reasoning, reinforcement learning, large language
-        models, financial risk management, and AI-assisted decision
-        systems. I have worked on projects involving computer vision,
-        operating systems, financial time-series modelling, and LLM-based
-        survey/research pipelines.
+        I am an MEng Mathematics and Computer Science student at Imperial College London
+        (2023–2027, expected). This is a four-year, full-time undergraduate integrated
+        master’s programme taught jointly by the Department of Computing and the
+        Department of Mathematics.
+      </p>
+      <p>
+        My research focuses on evaluating and improving AI agents: separating decision
+        quality from system design, modelling populations in LLM-based surveys, and
+        studying memory and collaboration in multi-agent systems. I have conducted
+        research at CKGSB and Zhejiang University.
       </p>
     </section>
 
@@ -50,42 +53,71 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Projects</h2>
+    <section aria-labelledby="papers-heading">
+      <h2 id="papers-heading">Manuscripts under review</h2>
+      <article class="paper">
+        <div>
+          <h3>From System Performance to Decision Attribution in Agent Evaluation</h3>
+          <p class="authors"><strong>Hongrui Chen</strong>, Yingjie Zhang, Jiarong Xu</p>
+          <p class="status">Under review at ICLR</p>
+          <p>Matched Policy Intervention (MPI) isolates the contribution of an agent’s
+            decision policy by holding available actions fixed and randomizing which
+            policy recommendation is executed. Experiments across CausalGame, CARE,
+            and a discrete-action CausaLab adaptation show how system-level gains
+            can disappear when decision affordances are matched.</p>
+          <p class="mentors">First-author project; developed with Prof. Yingjie Zhang and Prof. Jiarong Xu.</p>
+        </div>
+        <figure>
+          <a href="assets/mpi-paper-preview.png" aria-label="View full-size first-page preview of the MPI manuscript">
+            <img src="assets/mpi-paper-preview.png" alt="First page of From System Performance to Decision Attribution in Agent Evaluation, showing the title, abstract, and introduction" width="1082" height="1400" loading="lazy">
+          </a>
+          <figcaption>Manuscript preview · select to enlarge</figcaption>
+        </figure>
+      </article>
+      <article class="project">
+        <h3>Population Modeling Should Be a First-Order Design Problem in LLM-Based Survey Simulation</h3>
+        <p class="authors">Hou-Wan Long, Wen Wang, <strong>Hongrui Chen</strong>, Tianshu Sun</p>
+        <p class="status">Under review at AAAI</p>
+        <p>Studies why LLM survey simulations misrepresent target populations. We formalize
+          target, implicit-model, and mediator populations, and evaluate population-structured
+          inference using 12,000 social-media posts and 138,000 survey responses.</p>
+      </article>
+    </section>
 
+    <section>
+      <h2>Selected research and projects</h2>
+      <article class="project">
+        <h3>TRIAGE-Bench</h3>
+        <p>A 2,000-item benchmark of jurisdictional, temporal, regulatory, and polypharmacy
+          evidence conflicts. A 2 × 2 Hint × Source design and 56,000 responses from seven
+          models help distinguish source-selection failures from action-mapping failures.</p>
+        <p><a href="https://huggingface.co/datasets/DarrenLoong/TRIAGE_Bench">Public benchmark on Hugging Face</a></p>
+      </article>
+      <article class="project">
+        <h3>Memory Application Channels in Dynamic Multi-Agent Systems</h3>
+        <p>At Zhejiang University, advised by Prof. Zemin Liu in Prof. Fei Wu’s group,
+          I study how agents apply memory through advice, rewrites, and artifacts,
+          tracking exposure, adoption, and outcomes on TerminalBench.</p>
+      </article>
       <article class="project">
         <h3>Causal Spatiotemporal Deep Emulator for Secondary Motion</h3>
-        <p>
-          A learned soft-body emulator for 3D character animation.
-          Introduces a stiffness-conditioned causal cone that masks
-          spatiotemporal information flow at each receptive-field scale,
-          and an inference-time ensemble with the published Deep
-          Emulator baseline. Across 10 character motions and 13
-          stiffness values, the ensemble recipe at &alpha;&nbsp;=&nbsp;0.6
-          cuts 40-frame autoregressive rollout MSE by ~38&#37; over the
-          baseline; the cone module alone establishes a clean ablation
-          ladder (no-cone&nbsp;&lt;&nbsp;fixed-velocity&nbsp;&lt;&nbsp;learned-velocity).
-        </p>
+        <p>Advised by Prof. Jin Huang, I built a causal graph-network emulator for
+          soft-body simulation. A causal-cone ablation across ten unseen character–motion
+          pairs reduced MSE by 66% on average with 0.07 ms overhead.</p>
       </article>
-
       <article class="project">
-        <h3>Dual-Agent LLM Reasoning with GRPO and LoRA</h3>
-        <p>
-          Exploring multi-agent mathematical reasoning using
-          solver–verifier agents, LoRA adaptation, and reinforcement
-          learning.
-        </p>
+        <h3>AI Quotient Assessment and Autonomous Research Agents</h3>
+        <p>At CKGSB’s AI and Intelligent Industry Lab, I built executable human–AI
+          benchmarks with deterministic scoring and self-validation, and research-agent
+          workflows spanning topic discovery, experiments, manuscript drafting, and
+          iterative review.</p>
       </article>
-
       <article class="project">
-        <h3>LLM&nbsp;+ Social Listening / Survey Reconstruction</h3>
-        <p>
-          Building pipelines that combine social media clustering,
-          embedding models, and LLM agents to reconstruct consumer
-          survey distributions.
-        </p>
+        <h3>Metric-Mode: Autonomous ML Agent</h3>
+        <p>Technical lead for a Kotlin/Koog agent that automates the tabular-ML lifecycle,
+          from conversational requirements to training and PDF/HTML reports.
+          Winner of the IC Hack 2026 JetBrains Kotlin Koog track.</p>
       </article>
-
     </section>
 
     <section>
